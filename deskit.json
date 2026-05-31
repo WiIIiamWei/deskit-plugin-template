@@ -7,9 +7,9 @@
     "en": "A starter DesKit plugin that greets you.",
     "zh-CN": "一个问候你的 DesKit 入门插件。"
   },
-  "version": "0.1.0",
+  "version": "0.3.0",
   "author": "Your Name",
-  "engines": { "deskit": "^0.1.0" },
+  "engines": { "deskit": "^0.2.0" },
   "main": "dist/index.js",
   "contributes": {
     "commands": [

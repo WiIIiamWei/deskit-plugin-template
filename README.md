@@ -35,8 +35,8 @@ Edit `src/index.ts`. Each command id must match a `contributes.commands[].id` in
 2. Tag and push:
 
    ```bash
-   git tag v0.1.0
-   git push --tags
+   git tag v0.3.0
+   git push origin v0.3.0
    ```
 
    The `release` workflow typechecks, builds, validates, packs a `<id>-<version>.deskit` computes its SHA-256, and attaches both to a GitHub Release.
@@ -45,7 +45,7 @@ Edit `src/index.ts`. Each command id must match a `contributes.commands[].id` in
 
 ## Manifest notes
 
-- `engines.deskit` — semver range of DesKit host versions you support (e.g. `^0.1.0`). The host refuses plugins outside this range.
+- `engines.deskit` — semver range of DesKit host versions you support (e.g. `^0.2.0`). The host refuses plugins outside this range.
 - `permissions` — declare what your plugin uses (`clipboard:read`, `clipboard:write`, `notification`, `system:open-url`, `system:open-path`, `system:capture-screen`, `storage:plugin`). Calling an API without its permission throws at runtime.
 - `mode` per command — `"view"` shows a view; `"no-view"` is fire-and-forget (return a `toast`).
 

@@ -9,6 +9,7 @@
   },
   "version": "0.3.0",
   "author": "Your Name",
+  "icon": "lucide:hand",
   "engines": { "deskit": "^0.2.0" },
   "main": "dist/index.js",
   "contributes": {
@@ -18,6 +19,7 @@
         "title": { "en": "Hello", "zh-CN": "你好" },
         "subtitle": { "en": "Greet someone", "zh-CN": "向某人问好" },
         "keywords": ["hello", "greet", "你好"],
+        "icon": "lucide:hand",
         "mode": "view"
       }
     ]

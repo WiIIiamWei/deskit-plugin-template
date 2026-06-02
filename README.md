@@ -46,6 +46,8 @@ Edit `src/index.ts`. Each command id must match a `contributes.commands[].id` in
 ## Manifest notes
 
 - `engines.deskit` — semver range of DesKit host versions you support (e.g. `^0.2.0`). The host refuses plugins outside this range.
+- `icon` — plugin-level icon shown in installed plugin lists and as the fallback command icon. Use `lucide:<name>` (for a bundled Lucide icon) or a relative image path packaged with the plugin.
+- `contributes.commands[].icon` — optional command-level icon. Use the same `lucide:<name>` or packaged relative image path format.
 - `permissions` — declare what your plugin uses (`clipboard:read`, `clipboard:write`, `notification`, `system:open-url`, `system:open-path`, `system:capture-screen`, `storage:plugin`). Calling an API without its permission throws at runtime.
 - `mode` per command — `"view"` shows a view; `"no-view"` is fire-and-forget (return a `toast`).
 
